@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nowprototypeit/run-run-run.git"
+    "url": "git+https://github.com/nowprototypeit/watch-and-test.git"
   },
   "keywords": [
     "test",
@@ -23,9 +23,9 @@
   "author": "Natalie Carey <natalie@nowprototype.it>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nowprototypeit/run-run-run/issues"
+    "url": "https://github.com/nowprototypeit/watch-and-test/issues"
   },
-  "homepage": "https://github.com/nowprototypeit/run-run-ruun#readme",
+  "homepage": "https://github.com/nowprototypeit/watch-and-test#readme",
   "dependencies": {
     "chokidar": "^4.0.3",
     "commander": "^14.0.0"
