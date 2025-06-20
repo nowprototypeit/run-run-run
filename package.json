@@ -1,11 +1,11 @@
 {
-  "name": "run-run-run",
+  "name": "watch-and-test",
   "version": "0.0.1",
   "description": "A file watcher that runs multiple layers of tests.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "run-run-run": "bin/run.js"
+    "watch-and-test": "bin/run.js"
   },
   "scripts": {
     "lint": "standard",

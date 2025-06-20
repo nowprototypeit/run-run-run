@@ -1,4 +1,4 @@
-# run-run-run
+# Watch and Test
 A file watcher that runs the tests, if one test phase fails it doesn't continue
 
 ## Usage
@@ -6,7 +6,7 @@ A file watcher that runs the tests, if one test phase fails it doesn't continue
 Basic usage:
 
 ```bash
-npx run-run-run 'npm run test:unit' 'npm run test:integration' 'npm run test:e2e'
+npx watch-and-test 'npm run test:unit' 'npm run test:integration' 'npm run test:e2e'
 ```
 
 This will run the unit tests, then the integration tests, and finally the e2e tests. If any of these phases fail, it won't run further tests.  Any file changes in the directory you run this command in will trigger the tests to run again.
@@ -18,24 +18,24 @@ This tool is used via `npx` (it is therefore an NPM package), but it isn't just 
 As a couple of examples:
 
 ```bash
-npx run-run-run 'python -m unittest discover -s tests/unit' 'python -m unittest discover -s tests/integration' 'python -m unittest discover -s tests/e2e'
+npx watch-and-test 'python -m unittest discover -s tests/unit' 'python -m unittest discover -s tests/integration' 'python -m unittest discover -s tests/e2e'
 ```
 
 ```bash
-npx run-run-run 'mvn test -Dtest=UnitTests' 'mvn test -Dtest=IntegrationTests' 'mvn test -Dtest=E2ETests'
+npx watch-and-test 'mvn test -Dtest=UnitTests' 'mvn test -Dtest=IntegrationTests' 'mvn test -Dtest=E2ETests'
 ```
 
 ### Optional arguments
 - `--watch-dir <string>`: The directory to watch for file changes. Defaults to the current working directory.
 - `--working-dir <string>`: The directory in which to run the tests. Defaults to the current working directory.
 - `--watch-file-extensions <string>`: Comma-separated list of file extensions to watch for changes. By default, all files are watched.
-- `--version` or `-v`: Displays the version of the `run-run-run` package.
+- `--version` or `-v`: Displays the version of the package.
 - `--help` or `-h`: Displays help information about the command and its options.
 
 ### Example using all optional arguments
 
 ```bash
-npx run-run-run --watch-dir './my-project-files' --working-dir './my-project-files/a-subdir-for-some-reason' --watch-file-extensions 'ts,json' 'npm run test:unit' 'npm run test:integration' 'npm run test:e2e'
+npx watch-and-test --watch-dir './my-project-files' --working-dir './my-project-files/a-subdir-for-some-reason' --watch-file-extensions 'ts,json' 'npm run test:unit' 'npm run test:integration' 'npm run test:e2e'
 ```
 
 ## License
