@@ -32,5 +32,11 @@
   },
   "devDependencies": {
     "standard": "^17.1.2"
-  }
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "bin/",
+    "LICENSE"
+  ]
 }
